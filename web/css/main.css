@@ -2,9 +2,22 @@ body{
 
 }
 
-.logo{
-    margin-top: 20px;
+.home #header{
+    background-image: url('../image/Home/banner.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 100%;
+    min-height: 585px;
 }
+
+.home #contacto{
+    background-image: url('../image/Contacto/banner.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    width: 100%;
+    min-height: 585px;
+}
+
 
 .navbar-default {
 background-color: #fff;
@@ -35,91 +48,7 @@ margin-bottom: -10px;
     padding: 10px 12px!important;
 }
 
-.main-orange{
-    background-color: #ce6458;
-    margin-top: 15px;
-}
 
-.main-orange div div{
-    padding: 10px 0;
-}
-
-.main-orange div div:hover{
-    background-color: #af4b3f;
-}
-
-
-.tab-active{
-    background-color: #af4b3f;
-}
-
-.main-orange div div span{
-    color: #fff;
-    font-size:18px;
-    font-weight: bold;
-}
-
-.main-orange div div a{
-    text-decoration: none;
-}
-
-.mapa{
-    height: 400px;
-}
-
-
-.reserva{
-    min-height: 350px;
-   background-color: #2d3b46; 
-   color:#fff;
-}
-
-.reserva label{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: #fff;
-}
-
-.escribe{
-    font-size: 30px;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-button#inputEnviar {
-background-color: #cb5b4e;
-border: none;
-font-size: 16px;
-font-family: 'Montserrat', sans-serif;
-font-weight: 700;
-padding: 5px 15px;
-margin-bottom: 20px;
-}
-
-.contacto{
-    min-height: 150px;
-    padding-top: 35px;
-    background-color: #ce6458;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-}
-
-footer{
-    background-color: #2d3b46;
-}
-
-footer p{
-    color: #fff;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin-top: 5px;
-}
 
 @media only screen and (max-width : 320px) {
     .img{
