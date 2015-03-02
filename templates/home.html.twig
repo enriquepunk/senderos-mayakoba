@@ -1,0 +1,89 @@
+{% extends "base.html.twig" %}
+{% block title %}Inicio{% endblock %}
+{% block css %}{% endblock %}
+{% block content %}
+<div class="row">
+	<section class="col-xs-12 col-sm-12 mapa" id="mapas">
+		<div id="mapa" class="row">
+	      	<div class="col-xs-12 col-sm-12 mp" id="map_canvas" style="width:100%; height:400px; padding:0"></div>
+	      	<div class="col-xs-12 col-sm-12 mp" id="map_canvas2" style="width:100%; height:400px; padding:0"></div>
+	    </div>  
+		    
+	</section>
+	<section class="col-xs-12 col-sm-12 col-md-12 reserva" id="reserva">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 text-center escribe"><span>¡Escríbenos!</span></div>
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+				<form class="form-horizontal form" id="form">
+				  <div class="form-group">
+				    <label for="inputnombre" class="col-sm-2 col-xs-12 control-label">Nombre: </label>
+				    <div class="col-sm-4 col-xs-12">
+				      <input type="text" required class="form-control" id="inputnombre" name="nombre" placeholder="">
+				    </div>
+					<label for="inputemail" class="col-sm-1 control-label">E-mail: </label>
+				    <div class="col-sm-4 col-xs-12">
+				      <input type="text" required class="form-control" id="inputemail" placeholder="" name="correo">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputtel" class="col-sm-2 col-xs-12 control-label">Teléfono: </label>
+				    <div class="col-sm-4 col-xs-12">
+				      <input type="text" required class="form-control" id="inputtel" placeholder="" name="telefono">
+				    </div>
+					<label for="inputempresa" class="col-sm-1 col-xs-12 control-label">Empresa: </label>
+				    <div class="col-sm-4 col-xs-12">
+				      <input type="text" required class="form-control" id="inputempresa" placeholder="" name="empresa">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputinteres" class="col-sm-2 col-xs-12 control-label">Interesado en: </label>
+				    <div class="col-sm-4 col-xs-12">
+				      	<select class="form-control" id="inputinteres" required name="interes">
+						  <option value="Colosio">Colosio</option>
+						  <option value="Huayacán">Huayacán</option>
+						</select>
+				    </div>
+					<label for="inputPassword" class="col-sm-1 col-xs-12 control-label">Fechas: </label>
+				    <div class="col-sm-2 col-xs-12">
+				      <input type="text" required class="form-control datepicker1" id="inputinicio" placeholder="Inicio" name="inicio" style="width: 80%;"><span class="pull-right icon-uniE601" style="font-size: 25px;margin-top: -30px;"></span>
+				    </div>
+				    <div class="col-sm-2 col-xs-12">
+				      <input type="text" required class="form-control datepicker2" id="inputfin" placeholder="Término" name="fin" style="width: 80%;"><span class="pull-right icon-uniE601" style="font-size: 25px;margin-top: -30px;"></span>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <label for="inputcomentarios" class="col-sm-2 col-xs-12 control-label">Comentarios: </label>
+				    <div class="col-sm-9 col-xs-12">
+				      <textarea class="form-control" id="inputcomentarios" required rows="3" name="comentarios"></textarea>
+				    </div>
+				  </div>
+				  <div class="form-group">
+				  	<div class="col-sm-11 col-xs-12">
+				  		<button id="inputEnviar" type="submit" class="pull-right"><span>Enviar</span></button>
+				  	</div>
+				  </div>
+				  <div class="col-sm-9 col-xs-12 text-center">
+				  	<span id="response"></span>
+				  </div>
+				</form>
+			</div>
+		</div>
+					
+	</section>
+	<section class="col-xs-12 col-sm-12 col-md-12 contacto" id="contacto">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 text-center">
+				<img src="web/image/celular.png"><span>&nbsp; &nbsp; (998) 246 58 46</span>
+			</div>
+			<div class="col-xs-12 col-sm-4 text-center">
+				<img src="web/image/telefono.png"><span>&nbsp; &nbsp; (998) 845 26 99</span>
+			</div>
+			<div class="col-xs-12 col-sm-4 text-center">
+				<img class="img" src="web/image/mail.png"><span>&nbsp; &nbsp; info@espectacularescancun.com</span>
+			</div>
+		</div> 
+	</section>
+</div>
+{% endblock %}
+
+	

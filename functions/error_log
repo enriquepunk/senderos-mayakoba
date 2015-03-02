@@ -1,0 +1,10 @@
+[28-Apr-2014 11:59:12 America/Denver] PHP Notice:  Undefined variable: german@punkmkt.com in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 50
+[28-Apr-2014 12:01:25 America/Denver] PHP Notice:  Undefined variable: errors in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 57
+[28-Apr-2014 12:02:53 America/Denver] PHP Notice:  Undefined variable: errors in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 57
+[28-Apr-2014 12:03:19 America/Denver] PHP Notice:  Undefined variable: errors in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 57
+[28-Apr-2014 12:16:31 America/Denver] PHP Notice:  Undefined index: cmd in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 2
+[28-Apr-2014 12:16:31 America/Denver] PHP Notice:  Undefined variable: response in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 486
+[28-Apr-2014 12:17:43 America/Denver] PHP Notice:  Undefined index: nombre in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 86
+[28-Apr-2014 12:19:21 America/Denver] PHP Notice:  Undefined variable: errors in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 92
+[28-Apr-2014 12:20:55 America/Denver] PHP Notice:  Undefined variable: errors in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 92
+[28-Apr-2014 12:20:58 America/Denver] PHP Notice:  Undefined variable: errors in /home5/punkmktc/punk2013/web/webs/pasteleteria/functions/ajax.php on line 92

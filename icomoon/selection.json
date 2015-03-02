@@ -1,0 +1,68 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M256 576h128v-128h-128v128zM256 768h128v-128h-128v128zM320 0h-128v128h128v-128zM448 768h128v-128h-128v128zM448 576h128v-128h-128v128zM896 0v128c0 35.328-28.608 64-64 64h-128c-35.392 0-64-28.672-64-64v-128h-256v128c0 35.328-28.608 64-64 64h-128c-35.392 0-64-28.672-64-64v-128c-70.656 0-128 57.344-128 128v768c0 70.656 57.344 128 128 128h768c70.656 0 128-57.344 128-128v-768c0-70.656-57.344-128-128-128zM896 832c0 35.392-28.608 64-64 64h-640c-35.392 0-64-28.608-64-64v-448c0-35.328 28.608-64 64-64h640c35.392 0 64 28.672 64 64v448zM640 768h128v-128h-128v128zM640 576h128v-128h-128v128zM832 0h-128v128h128v-128z"
+				],
+				"attrs": [
+					{}
+				],
+				"grid": 16
+			},
+			"attrs": [
+				{}
+			],
+			"properties": {
+				"order": 1,
+				"id": 0,
+				"prevSize": 16,
+				"code": 58881,
+				"name": "uniE601",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 0
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon"
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 512,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 58880,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"search": ""
+	}
+}
