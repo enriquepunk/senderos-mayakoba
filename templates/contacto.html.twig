@@ -1,0 +1,105 @@
+{% extends "base.html.twig" %}
+{% block title %}Contacto{% endblock %}
+{% block css %}{% endblock %}
+{% block bodyclass %}<body class="home">{% endblock %}
+{% block headerclass %}  <header id="contacto" class="container">{% endblock %}
+{% block content %}
+<div class="row">
+	<section class="col-md-10 col-md-offset-1">
+		<div class = "row">
+			<div class = "col-xs-12 text-center">
+				<h1 class = "title montserrat color3">Contacto</h1>
+				<p class = "title-caption text-center mancha-texto color4">
+					Envíanos un mensaje o llámanos y resolveremos tus dudas. ¡Estamos para servirte!
+				</p>
+			</div>
+		</div>   
+	</section>
+</div>
+<div class = "row section-list-contacto">
+	<section class ="col-md-10 col-md-offset-1">
+		<div class = "row">
+			<div class = "col-md-6 contacto-derecha">
+				<div class = "row">
+					<div class = "col-md-10 col-md-offset-1">
+						<form role="form">
+						  <div class="form-group">
+						    <label class="col-md-2" for="form-nombre">Nombre:</label>
+						    <div class="col-md-10">
+						    	<input type="email" name="nombre" class="form-control" id="form-nombre">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label class="col-md-2" for="form-email">Email:</label>
+						    <div class="col-md-10">
+						    	<input type="email" name="email" class="form-control" id="form-email" >
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label class="col-md-2" for="form-tel">Teléfono:</label>
+						    <div class="col-md-10">
+						    	<input type="email" name="telefono" class="form-control" id="form-tel">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label class="col-md-2" for="form-asunto">Asunto:</label>
+						    <div class="col-md-10">
+						    	<input type="email" name="asunto" class="form-control" id="form-asunto">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label class="col-md-2" for="form-mensaje">Mensaje:</label>
+						    <div class="col-md-10">
+						    	<textarea name="mensaje" class="form-control" id="form-mensaje" rows="3"></textarea>
+						    </div>
+						  </div>
+						  
+						  <button type="submit" class="btn-enviar background4 "><span class=" montserrat">Enviar</span> <span class="icon-circle-right vertical-aling"></span></button>
+
+						</form>
+					</div>
+				</div>	
+			</div>
+			<div class = "col-md-6 ">
+				<div class = "row">
+					<div class = "col-md-10 col-md-offset-1 ">
+						<p>Información de ventas:</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+</div>
+<div class = "row thumnails-img">
+	<section class = "col-md-10 col-md-offset-1">
+		<div class = "row">
+			<div clas="col-md-12-" id="mapa"></div>
+			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		    <script>
+		      function dos() {
+		        var myLatlng = new google.maps.LatLng(20.673967, -87.049499);
+		        var mapOptions = {
+		          center: myLatlng,
+		          zoom: 13,
+		          mapTypeId: google.maps.MapTypeId.ROADMAP
+		        };
+		        var map = new google.maps.Map(document.getElementById("mapa"),
+		            mapOptions);
+		       var marker = new google.maps.Marker({
+			      position: myLatlng,
+			      map: map,
+			      title: 'Mayakoba',
+			      icon: 'web/image/Contacto/pin.png'
+		  		});
+		 
+		      };
+
+		      google.maps.event.addDomListener(window, 'load', dos);
+		        
+		    </script>   
+		</div>
+	</section>
+</div>
+{% endblock %}
+
+	

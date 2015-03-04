@@ -8,17 +8,19 @@
     <meta charset="UTF-8">  
     <link rel="shortcut icon" href="web/image/favicon-paste.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <base href="http://localhost/mayakoba/"/>
+    <!--<base href="http://localhost/mayakoba/"/>-->
     <!--<base href="http://punkmkt.com/webs/espectaculares/"/>-->
     <!--<base href="http://espectacularescancun.com/"/>-->
+    <base href="http://162.243.121.61/mayakoba/senderos-mayakoba/"/>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
     <link href="vendor/bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.css">
-    <link href="web/css/main.css" rel="stylesheet" media="screen">
     <link href="web/css/style.css" rel="stylesheet" media="screen">
+    <link href="web/css/main.css" rel="stylesheet" media="screen">
+    
     {% block css %}{% endblock %} 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -30,63 +32,138 @@
     <script type="text/javascript" src="web/js/mapa.js"></script>
   </head> 
   {% block bodyclass %}<body class="home">{% endblock %}
-      <header id="header" class="container-fluid">
+    {% block headerclass %}  <header id="header" class="container">{% endblock %}
           <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 hidden-xs">
+            <div class="col-sm-10 col-sm-offset-1">
               <div class="row">
-                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                  <img class = "img-responsive" src="./web/image/General/logo.png"/>
+                </div>
                 <div class="col-sm-8">
-                  <nav id="menu-top" class=" top-menu navbar navbar-default" role="navigation">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
-                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>  
-                      </button>
+                  <div class = "row text-right top-header-menu-nav">
+                    <div class = "col-md-3 col-md-offset-3">
+                      <span class = "facebook icon-facebook px20 color1"></span>
+                      <span class = "twitter icon-twitter px20 color1"></span>
+                      <span class = "share-mail icon-mail px20 color1"></span>
                     </div>
-
-                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="font-sorts nav navbar-nav navbar-right text-center col-sm-12 ">
-                        <li id="link-menu-deli" class="item-menu"><a href="index.php/">Home</a></li>
-                        <li id="link-menu-rest" class="item-menu"><a href="index.php/quienes/">Quienes Somos</a></li>
-                        <li id="link-menu-paste" class="item-menu"><a href="index.php/talleres/">Talleres</a></li>
-                        <li id="link-menu-paste" class="item-menu"><a href="index.php/servicios/">Servicios</a></li>
-                        <li id="link-menu-paste" class="item-menu"><a href="index.php/equipo/">Equipo</a></li>
-                        <li id="link-menu-paste" class="item-menu"><a href="index.php/galeria">Galeria</a></li>
-                        <li id="link-menu-paste" class="item-menu"><a href="#contacto">Blog</a></li>
-                      </ul>
-                    </div><!-- /.navbar-collapse -->
-                  </nav>
+                    <div class = "col-md-3">
+                      <span class = "icon-phone px20 color1 vertical-aling"></span><a class = "px12 color1 montserrat" href="">01 800 00 00 00</a>
+                    </div>
+                    <div class = "col-md-3">
+                      <span class = "lang"><span class = "lang-icon icon-bubbles px20 color1 vertical-aling"></span><span class = "lang-text px13 color1 montserrat">Esp V</span></span>
+                    </div>
+                  </div>
+                  <div class = "row">
+                    <nav class="navbar navbar-default" role="navigation">
+                      <div class="collapse navbar-collapse navbar-ex1-collapse">           
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#" class = "px13 color1 montserrat"> <span class = "icon-home px20 color2 vertical-aling"></span> SENDEROS DE MAYAKOBA</a></li>
+                          <li><a href="#" class = "px13 color1 montserrat">GALERÍA</a></li>
+                          <li><a href="#" class = "px13 color1 montserrat">QUIÉNES SOMOS</a></li>
+                          <li><a href="#" class = "px13 color1 montserrat">CONTACTO</a></li>
+                          <li><a href="#" class = "px13 color1 montserrat">NOTICIAS</a></li>
+                        </ul>
+                      </div>
+                    </nav>                  
+                  </div>
                 </div>
               </div>
             </div>
           </div>
       </header>
       <div id="content" class="clearfix container-fluid">
-        {% block content %}  
-        {% endblock %}
+      {% block content %}
+      {% endblock %}
       </div>
-      <footer id="footer" class="clearfix container-fluid">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 text-center">
-            
+      <footer id="footer" class="clearfix container-fluid  footer-background">
+        <div class = "container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <div class = "row footer-super">
+                <div class = "col-md-8">
+                  <ul class = "row footer-list-nav-menu text-left">
+                    <li class = "">
+                      <a class = "color1 montserrat px12" href="">Inicio</a>
+                    </li>
+                    <li class = "">
+                      <a class = "color1 montserrat px12" href="">Senderos de Mayakobá</a>
+                      <ul class = "submenu-footer-nav">
+                          <li><a class = "color1 montserrat px12" href="#">Ubicación</a></li>
+                          <li><a class = "color1 montserrat px12" href="#">Master Plan</a></li>
+                          <li><a class = "color1 montserrat px12" href="#">Financiamiento</a></li>
+                          <li><a class = "color1 montserrat px12" href="#">Promociones</a></li>
+                      </ul>
+                    </li>
+                    <li class = "">
+                      <a class = "color1 montserrat px12" href="">Galería</a>
+                      <ul class = "submenu-footer-nav">
+                          <li><a class = "color1 montserrat px12" href="#">Renders</a></li>
+                          <li><a class = "color1 montserrat px12" href="#">Fotografía</a></li>
+                          <li><a class = "color1 montserrat px12" href="#">Videos</a></li>
+                          <li><a class = "color1 montserrat px12" href="#">Avance de obra</a></li>
+                      </ul>
+                    </li>
+                    <li class = "">
+                      <a class = "color1 montserrat px12" href="">Quiénes somos</a>
+                    </li>
+                    <li class = "">
+                      <a class = "color1 montserrat px12" href="">Contacto</a>
+                    </li>
+                    <li class = "">
+                      <a class = "color1 montserrat px12" href="">Noticias</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class = "col-md-4">
+                  <div class = "row">
+                    <div class = "col-md-5 col-md-offset-2">
+                      <a class = "color1 montserrat px12" href="">01 800 00 00 00</a>
+                    </div>
+                    <div class = "col-md-5">
+                        <span class = "facebook icon-facebook px20 color1"></span>
+                        <span class = "twitter icon-twitter px20 color1"></span>
+                        <span class = "share-mail icon-mail px20 color1"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class = "row">
+                <div class = "col-md-7 col-md-offset-5">
+                    <form class="form-inline row" role="form">
+                      <div class = "col-md-12">
+                          <div class = "row">
+                              <div class="form-group col-xs-12 text-right">
+                                  <label for="ejemplo_email_3" class="color1 montserrat px12 text-righ">suscríbete a nuestro Newsletter: </label>
+                                  <input class = "newsletter-input open-sans px12" type="email" class="form-control" id="ejemplo_email_3"
+                                         placeholder="E-mail">
+                                  <button class = "submit-newsletter color1 montserrat px12 background2" type="submit" class="btn btn-default">Enviar</button>
+                              </div>
+                          </div>
+                    </form>
+                    <div class = "row copy-text">
+                        <div class = "col-md-12 color1 montserrat px12 text-right">
+                          Todos los Derechos Reservados &reg; Senderos de Matakobá.
+                        </div>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
           </div>
         </div>
       </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--script src="//code.jquery.com/jquery.js"></script-->
     <script src="vendor/jquery.js"></script>
-    <script src="vendor/cycle2.js"></script>
+    <!--<script src="vendor/cycle2.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="vendor/bootstrap-3.1.1/js/bootstrap.min.js"></script>
-    <script src="vendor/fancybox/jquery.fancybox.js"></script>
-    <script src="vendor/validate.js"></script>
-    <script src="web/js/functions.js"></script>
+    <script src="vendor/bootstrap-3.1.1/js/bootstrap.min.js" defer></script>
+    <script src="vendor/fancybox/jquery.fancybox.js" defer></script>
+    <script src="vendor/validate.js" defer></script>
+    <script src="web/js/functions.js" defer></script>
+    <script src = "web/js/swfobject.js" defer></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js" defer></script>
     {% block js %}{% endblock %}
   </body>
 </html>
