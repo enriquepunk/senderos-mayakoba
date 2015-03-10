@@ -13,11 +13,7 @@ $app->get('/', function () {
 	$twig = new Twig_Environment($loader);
         echo $twig->render('home.html.twig',array());
 });
-$app->get('/contacto/', function () {
-	$loader = new Twig_Loader_Filesystem('templates');
-	$twig = new Twig_Environment($loader);
-	echo $twig->render('contacto.html.twig');
-});
+
 
 $app->run();
 

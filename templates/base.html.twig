@@ -27,9 +27,6 @@
       <script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
       <script src="http://getbootstrap.com/docs-assets/js/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA_TbxX1m1biZuaHgiZKmrrUPpvA046twA&sensor=false"></script>
-    <script type="text/javascript" src="web/js/mapa.js"></script>
   </head> 
   {% block bodyclass %}<body class="home">{% endblock %}
     {% block headerclass %}  <header id="header" class="container">{% endblock %}
@@ -37,17 +34,17 @@
             <div class="col-sm-10 col-sm-offset-1">
               <div class="row">
                 <div class="col-sm-4">
-                  <img class = "img-responsive" src="./web/image/General/logo.png"/>
+                  <a href="index.php"><img class = "senderos-mayakaba img-responsive" src="./web/image/General/logo.png"/></a>
                 </div>
                 <div class="col-sm-8">
                   <div class = "row text-right top-header-menu-nav">
                     <div class = "col-md-3 col-md-offset-3">
-                      <span class = "facebook icon-facebook px20 color1"></span>
-                      <span class = "twitter icon-twitter px20 color1"></span>
-                      <span class = "share-mail icon-mail px20 color1"></span>
+                      <a href="https://www.facebook.com/senderosmayakoba"><span class = "facebook icon-facebook px20 color1"></span></a>
+                      <a href="https://twitter.com/SenderosMk"><span class = "twitter icon-twitter px20 color1"></span></a>
+                      <a href="mailto:info@senderosmayakoba.mx"><span class = "share-mail icon-mail px20 color1"></span></a>
                     </div>
                     <div class = "col-md-3">
-                      <span class = "icon-phone px20 color1 vertical-aling"></span><a class = "px12 color1 montserrat" href="">01 800 00 00 00</a>
+                      <span class = "icon-phone px20 color1 vertical-aling"></span><a class = "px12 color1 montserrat" href="tel:+52 998 884 4145">+52 (998) 884 4145</a>
                     </div>
                     <div class = "col-md-3">
                       <span class = "lang"><span class = "lang-icon icon-bubbles px20 color1 vertical-aling"></span><span class = "lang-text px13 color1 montserrat">Esp V</span></span>
@@ -56,12 +53,36 @@
                   <div class = "row">
                     <nav class="navbar navbar-default" role="navigation">
                       <div class="collapse navbar-collapse navbar-ex1-collapse">           
-                        <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#" class = "px13 color1 montserrat"> <span class = "icon-home px20 color2 vertical-aling"></span> SENDEROS DE MAYAKOBA</a></li>
-                          <li><a href="#" class = "px13 color1 montserrat">GALERÍA</a></li>
-                          <li><a href="#" class = "px13 color1 montserrat">QUIÉNES SOMOS</a></li>
-                          <li><a href="#" class = "px13 color1 montserrat">CONTACTO</a></li>
-                          <li><a href="#" class = "px13 color1 montserrat">NOTICIAS</a></li>
+                        <ul class="nav navbar-nav navbar-left">
+                          <li><a href="index.php" class = "px13 color1 montserrat"> <span class = "icon-home px20 color2 vertical-aling"></span></a></li>
+                          <li class="dropdown">
+                              <a class="dropdown-toggle px13 color1 montserrat" data-toggle="dropdown" href="#">
+                                 SENDEROS DE MAYAKOBA</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class = "px13 color1 montserrat" href="./senderos.php">AMENIDADES & CONCEPTO</a></li>
+                                <li><a class = "px13 color1 montserrat" href="./ubicacion.php">UBICACIÓN</a></li>
+                                <li><a class = "px13 color1 montserrat" href="./master-plan.php">MASTER PLAN</a></li>
+                                <li><a class = "px13 color1 montserrat" href="./financiamiento.php">FINANCIAMIENTO</a></li>
+                                <li><a class = "px13 color1 montserrat" href="./promociones.php">PROMOCIONES</a></li>
+                              </ul>
+                          </li>
+                          <li class="dropdown">
+                              <a class="dropdown-toggle px13 color1 montserrat" data-toggle="dropdown" href="#">
+                                 GALERÍA</span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class = "px13 color1 montserrat" href="./galeria-render.php">RENDERS</a></li>
+                                <li><a class = "px13 color1 montserrat" href="./galeria-fotos.php">FOTOS</a></li>
+                                <li><a class = "px13 color1 montserrat" href="./galeria-videos.php">VIDEOS</a></li>
+                                <li><a class = "px13 color1 montserrat" href="./galeria-obra.php">AVANCES DE OBRA</a></li>
+                              </ul>
+                          </li>
+                          <!--<li class = ""><a href="index.php" class = "px13 color1 montserrat"> <span class = "icon-home px20 color2 vertical-aling"></span> SENDEROS DE MAYAKOBA</a></li>-->
+                          <!--<li><a href="#" class = "px13 color1 montserrat">GALERÍA</a></li>-->
+                          <li><a href="./quienes-somos.php" class = "px13 color1 montserrat">QUIÉNES SOMOS</a></li>
+                          <li><a href="./contacto.php" class = "px13 color1 montserrat">CONTACTO</a></li>
+                          <li><a href="./blog/" class = "px13 color1 montserrat">NOTICIAS</a></li>
                         </ul>
                       </div>
                     </nav>                  
@@ -139,6 +160,7 @@
                                   <button class = "submit-newsletter color1 montserrat px12 background2" type="submit" class="btn btn-default">Enviar</button>
                               </div>
                           </div>
+                        </div>
                     </form>
                     <div class = "row copy-text">
                         <div class = "col-md-12 color1 montserrat px12 text-right">
@@ -155,16 +177,21 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--script src="//code.jquery.com/jquery.js"></script-->
     <script src="vendor/jquery.js"></script>
+    <script src = "web/js/swfobject.js" defer></script>
     <!--<script src="vendor/cycle2.js"></script>-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="vendor/bootstrap-3.1.1/js/bootstrap.min.js" defer></script>
     <script src="vendor/fancybox/jquery.fancybox.js" defer></script>
     <script src="vendor/validate.js" defer></script>
     <script src="web/js/functions.js" defer></script>
-    <script src = "web/js/swfobject.js" defer></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js" defer></script>
+    <!--<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA_TbxX1m1biZuaHgiZKmrrUPpvA046twA&sensor=false"></script>
+    <script type="text/javascript" src="web/js/mapa.js"></script>-->
     {% block js %}{% endblock %}
+
+    {% block section %}{% endblock %}
   </body>
 </html>
   

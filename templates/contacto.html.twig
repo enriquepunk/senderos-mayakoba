@@ -8,7 +8,7 @@
 	<section class="col-md-10 col-md-offset-1">
 		<div class = "row">
 			<div class = "col-xs-12 text-center">
-				<h1 class = "title montserrat color3">Contacto</h1>
+				<h1 class = "title montserrat color3">{{page.titulo}}</h1>
 				<p class = "title-caption text-center mancha-texto color4">
 					Envíanos un mensaje o llámanos y resolveremos tus dudas. ¡Estamos para servirte!
 				</p>
@@ -22,39 +22,41 @@
 			<div class = "col-md-6 contacto-derecha">
 				<div class = "row">
 					<div class = "col-md-10 col-md-offset-1">
-						<form role="form">
+						<form role="form" id="form">
 						  <div class="form-group">
-						    <label class="col-md-2" for="form-nombre">Nombre:</label>
+						    <label class="col-md-2" for="form-nombre">{{page.nombre}}</label>
 						    <div class="col-md-10">
-						    	<input type="email" name="nombre" class="form-control" id="form-nombre">
+						    	<input type="text"required name="nombre" class="form-control without-borders" id="form-nombre">
 						    </div>
 						  </div>
 						  <div class="form-group">
-						    <label class="col-md-2" for="form-email">Email:</label>
+						    <label class="col-md-2" for="form-email">{{page.mail}}</label>
 						    <div class="col-md-10">
-						    	<input type="email" name="email" class="form-control" id="form-email" >
+						    	<input type="email" required name="email" class="form-control without-borders" id="form-email" >
 						    </div>
 						  </div>
 						  <div class="form-group">
-						    <label class="col-md-2" for="form-tel">Teléfono:</label>
+						    <label class="col-md-2" for="form-tel">{{page.tel}}</label>
 						    <div class="col-md-10">
-						    	<input type="email" name="telefono" class="form-control" id="form-tel">
+						    	<input type="text" required name="telefono" class="form-control without-borders" id="form-tel">
 						    </div>
 						  </div>
 						  <div class="form-group">
-						    <label class="col-md-2" for="form-asunto">Asunto:</label>
+						    <label class="col-md-2" for="form-asunto">{{page.asunto}}</label>
 						    <div class="col-md-10">
-						    	<input type="email" name="asunto" class="form-control" id="form-asunto">
+						    	<input type="text" required name="asunto" class="form-control without-borders" id="form-asunto">
 						    </div>
 						  </div>
 						  <div class="form-group">
-						    <label class="col-md-2" for="form-mensaje">Mensaje:</label>
+						    <label class="col-md-2" for="form-mensaje">{{page.mensaje}}</label>
 						    <div class="col-md-10">
-						    	<textarea name="mensaje" class="form-control" id="form-mensaje" rows="3"></textarea>
+						    	<textarea name="mensaje" class="form-control without-borders" id="form-mensaje" rows="3"></textarea>
 						    </div>
 						  </div>
 						  
-						  <button type="submit" class="btn-enviar background4 "><span class=" montserrat">Enviar</span> <span class="icon-circle-right vertical-aling"></span></button>
+						  <button type="submit" class="btn-enviar background4 "><span class=" montserrat">{{page.enviar}}</span> <span class="icon-circle-right vertical-aling"></span></button>
+
+						  <span id="response"></span>
 
 						</form>
 					</div>
@@ -63,7 +65,12 @@
 			<div class = "col-md-6 ">
 				<div class = "row">
 					<div class = "col-md-10 col-md-offset-1 ">
-						<p>Información de ventas:</p>
+						{{page.texto|raw}}
+						<p class="color1"><span class="share-mail icon-mail px20 color1 vertical-align"></span> <span class="montserrat bold">info@senderosmayakoba.mx</span></p>
+						<p class="color1"><span class="facebook icon-facebook px20 color1 vertical-align"></span> <span class="montserrat bold"> /SenderosMayakoba</span></p>
+						<p class="color1"><span class="twitter icon-twitter px20 color1 vertical-align"></span> <span class="montserrat bold">SenderosMayakoba</span></p>
+						<p class="color1 px13 open-sans weight-100">&#169; SENDEROS MAYAKOBA &#174; 2014</p>
+						
 					</div>
 				</div>	
 			</div>

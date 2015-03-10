@@ -1,0 +1,791 @@
+{% extends "base.html.twig" %}
+{% block headerclass %}  <header id="senderos" class="container">{% endblock %}
+
+{% block title %}Senderos De Mayakoba{% endblock %}
+{% block css %}{% endblock %}
+{% block content %}
+<div class="row">
+	<section class="col-md-10 col-md-offset-1">
+		<div class = "row">
+			<div class = "col-xs-12 text-center">
+				<h1 class = "title montserrat color3">Senderos de Mayakoba.</h1>
+				<p class = "title-caption text-justify mancha-texto color4">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur vel nisi laudantium libero, nostrum deserunt quisquam illum officiis reprehenderit! Voluptatum dignissimos possimus, dolore vero! Corporis, nisi nemo accusantium veniam libero!
+				</p>
+				<p class = "title-caption text-justify mancha-texto color4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum vel a, consequuntur inventore ipsam velit voluptas sed cum autem officia, id, cumque fugiat, nisi nihil molestias sequi voluptate rem. Cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatum delectus facilis, quia soluta, natus aliquid. Temporibus id tempore tenetur, fugiat, excepturi dolorum nihil ad. Officia culpa itaque tenetur, quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quisquam provident in atque assumenda praesentium voluptatem dolor dicta rem expedita veritatis repudiandae illum molestiae voluptate, tempore quibusdam delectus reprehenderit quaerat. </p>
+				<p class = "title-caption text-justify mancha-texto color4">Es un desarrollo basado en cuatro pilares:</p>
+			</div>
+		</div>
+		<div class = "row amenidades-galeria">
+			<div class = "col-md-3">
+				<div class = "grid-gallery">
+					<img class = "img-responsive" src="./web/image/senderos/Pilares/1-comunidad-integral.jpg" alt="">
+					<div class = "caption-img-grid background1"><h3 class = "title amenidades color1 italic open-sans text-center">Comunidad integral</h3></div>
+				</div>
+			</div>
+			<div class = "col-md-3">
+				<div class = "grid-gallery">
+					<img class = "img-responsive" src="./web/image/senderos/Pilares/2-seguridad.jpg" alt="">
+					<div class = "caption-img-grid background2"><h3 class = "title amenidades color1 italic open-sans text-center">Seguridad</h3></div>
+				</div>
+			</div>
+			<div class = "col-md-3">
+				<div class = "grid-gallery">
+					<img class = "img-responsive" src="./web/image/senderos/Pilares/3-sustentabilidad.jpg" alt="">
+					<div class = "caption-img-grid background3"><h3 class = "title amenidades color1 italic open-sans text-center">Sustentabilidad ambiental</h3></div>
+				</div>
+			</div>
+			<div class = "col-md-3">
+				<div class = "grid-gallery">
+					<img class = "img-responsive" src="./web/image/senderos/Pilares/4-planeacion-urbana.jpg" alt="">
+					<div class = "caption-img-grid background4"><h3 class = "title amenidades color1 italic open-sans text-center">Planeación urbana</h3></div>
+				</div>
+			</div>
+		</div>   
+	</section>
+</div>
+<div class = "row img-banner-eco-parque">
+	<div class = "col-md-12 no-padding">
+		<img class = "img-responsive" src="./web/image/senderos/imagen-parque.jpg" alt="">
+	</div>
+</div>
+<!--<div class = "row section-list">
+	<section class ="col-md-10 col-md-offset-1">
+		<div class = "row">
+			<div class = "col-md-6">
+				<div class = "row">
+					<div class = "col-md-12">
+						<ul class = "list-mayakoba-style mancha-texto color1">
+							<li class = "color1 text-justify">Senderos de Mayakoba es un residencial fundamentado sobre cuatro pilares:<br></li>
+							<li class = "color1 text-justify">El concepto de Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente.</li>
+							<li class = "color1 text-justify">Senderos de Mayakoba ofrece predios unifamiliares con una área promedio de 300m2 cada uno</li>
+							<li class = "color1 text-justify">Es un proyecto enmarcado por hermosas áreas naturales y dos cenotes, así como bellos senderos que lo ubican en el más alto nivel de calidad inmobiliaria.</li>
+							<li class = "color1 text-justify">Senderos de Mayakoba esta desarrollado en una superficie de aproximadamente 27 has.</li>
+						</ul>		
+					</div>
+				</div>
+				<div class = "row share-content">
+					<div class = "col-md-4">
+						<span class = "facebook-button share-btn" data-service = "facebook" data-url="http://162.243.121.61/mayakoba/senderos-mayakoba/" data-image="" data-title="Senderos de Mayakoba"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
+					</div>
+					<div class = "col-md-4">
+						<span class = "twitter-buttom share-btn-2" data-service = "twitter" data-image = "" data-url = ""><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+					</div>
+					<div class = "col-md-4">
+						<span class = "mail-share"><a href="mailto:?subject=SENDEROS DE MAYAKOBA&amp;body=Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente" title="Share by Email"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></a></span>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-6 content-vide-sfwobject">
+					<div  class = "videoWrapper" class = "display-desk">
+				    	<div id = "ytapiplayer">
+							<iframe  class = "mobil-iframe hidden" width="560" height="315" src="https://www.youtube.com/embed/h3wF63c36uc?rel=0" frameborder="0" allowfullscreen>
+							</iframe>
+							<img class = "img-responsive click-able-youtube" data-youtube = "" src="./web/image/Home/img-video.jpg" alt=""/>
+						</div>
+						<div class="ControlVideoBar">
+							<span data-action="pause" class="icon-pause2 hidden pause_video color1" onclick="pausethevideo();"></span>
+							<span data-action="play" class="icon-play3 play_video color1" onclick="playthevideo();"></span>
+							<span data-action="mute" class="icon-volume-mute2 hidden mute_video color1" onclick="mutethevideo();"></span>
+							<span data-action="unmute" class="icon-volume-medium unmute_video color1" onclick="unmutethevideo();"></span>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+</div>-->
+<div class = "row thumnails-img">
+	<section class = "col-md-10 col-md-offset-1">
+		<div class = "row text-center">
+			<div class = "col-md-12">
+				<h2 class = "title monserrat bold color5">Amenidades</h2>
+				<p class = "mancha-texto color4">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam maxime dolorum rerum, officia alias consectetur, obcaecati minus optio ducimus, cupiditate libero possimus impedit rem odit dicta aperiam est eius ex.
+				</p>
+			</div>
+		</div>
+		<div class = "row amenidades-galeria-grid">
+			<div class = "col-md-4">
+				<div class = "grid-gallery" data-toggle="modal" data-target="#cenotes">
+					<img class = "img-responsive" src="./web/image/senderos/Amenidades/1-cenotes.jpg" alt="">
+					<div class = "caption-img-grid background1"><h3 class = "title color1 italic open-sans text-center">Cenotes</h3></div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "grid-gallery" data-toggle="modal" data-target="#senderosslide">
+					<img class = "img-responsive" src="./web/image/senderos/Amenidades/2-senderos.jpg" alt="">
+					<div class = "caption-img-grid background4"><h3 class = "title color1 italic open-sans text-center">Senderos</h3></div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "grid-gallery" data-toggle="modal" data-target="#parques">
+					<img class = "img-responsive" src="./web/image/senderos/Amenidades/3-parques.jpg" alt="">
+					<div class = "caption-img-grid background3"><h3 class = "title color1 italic open-sans text-center">Parques</h3></div>
+				</div>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "col-md-4">
+				<div class = "grid-gallery" data-toggle="modal" data-target="#casa">
+					<img class = "img-responsive" src="./web/image/senderos/Amenidades/4-casa-club.jpg" alt="">
+					<div class = "caption-img-grid background1"><h3 class = "title color1 italic open-sans text-center">Casa club</h3></div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "grid-gallery " data-toggle="modal" data-target="#pista">
+					<img class = "img-responsive" src="./web/image/senderos/Amenidades/5-ciclopista.jpg" alt="">
+					<div class = "caption-img-grid background2"><h3 class = "title color1 italic open-sans text-center">Ciclopista Infinity</h3></div>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class = "grid-gallery" data-toggle="modal" data-target="#membrecias">
+					<img class = "img-responsive" src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="">
+					<div class = "caption-img-grid background5"><h3 class = "title color1 italic open-sans text-center">Membresías Mayakoba</h3></div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<div class = "row thumnails-img avanceobra">
+	<div class ="col-md-8 col-md-offset-2">
+		<div class = "row text-center">
+			<h2 class = "title monserrat bold color2">360º</h2>
+			<p class = "mancha-texto color4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque animi quidem laborum dolor possimus voluptas libero vero distinctio, quis culpa. Quos fugit asperiores culpa laudantium tenetur ipsum repellat, nulla error.</p>
+		</div>
+		<div class = "row">
+			<div class = "col-md-12">
+				<div class = "view_360">
+					<img class = "img-responsive" src="./web/image/senderos/imagen-recorrido.jpg" alt=""/>
+					<a href="#" class="read-more-btn 360viewlink montserrat px16 background1 color1">
+					RECORRER <span class="icon-circle-right vertical-aling"></span>
+				</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class = "row last-post-content">
+	<section class = "col-md-10 col-md-offset-1">
+		<div class = "row">
+			<div class = "col-md-12">
+				<h2 class = "title color1 montserrat bold text-center">Eco-Chic</h2>					
+			</div>
+		</div>	
+		<div class = "row content-post">
+			<div class = "col-md-6">
+					<div class = "col-md-12">
+						<div class = "row">
+							<div class = "col-md-12">
+								<p class = "list-mayakoba-style mancha-texto color1">
+									Senderos de Mayakoba es una encantadora expresión en el diseño y concepto Eco-Chic, ya que es un proyecto responsable con el medio ambiente, utilizando materiales y diseños de calidad y belleza, es elegante, de buen gusto y aplica procedimientos para ahorrar o reutilizar la energía, la vegetación y el agua.
+								</p>		
+							</div>
+						</div>
+						<div class = "row">
+							<hr class = "separator-eco-chic">
+						</div>
+						<div class = "row share-content">
+							<div class = "col-md-4">
+								<span class = "facebook-button share-btn" data-service = "facebook" data-url="http://162.243.121.61/mayakoba/senderos-mayakoba/" data-image="" data-title="Senderos de Mayakoba"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
+							</div>
+							<div class = "col-md-4">
+								<span class = "twitter-buttom share-btn-2" data-service = "twitter" data-image = "" data-url = ""><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+							</div>
+							<div class = "col-md-4">
+								<span class = "mail-share"><a href="mailto:?subject=SENDEROS DE MAYAKOBA&amp;body=Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente" title="Share by Email"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></a></span>
+							</div>
+						</div>	
+					</div>
+			</div>
+			<div class = "col-md-6">		
+					<div class = "col-md-12">
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="./web/image/senderos/eco-chic/1.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/eco-chic/1.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/eco-chic/1.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+</div>
+{% endblock %}
+
+
+
+
+
+{% block section %}
+
+
+<!-- Modal  sections for amenidades -->
+<div class="modal fade" id="membrecias" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class = "row">
+        	<div class = "col-md-6">
+        		<div id="carousel-membrecias" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-membrecias" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-membrecias" data-slide-to="1"></li>
+						    <li data-target="#carousel-membrecias" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-membrecias" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-membrecias" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+        	</div>
+        	<div class= "col-md-6 modal-texto">
+        		<div class = "row">
+        			<div class = "col-md-12">
+        				<div class = "row">
+        					<div class = "col-md-12">
+		        				<h4 class = "title color6 text-center">Membresía Mayakoba</h4>
+				        		<ul class="list-mayakoba-style mancha-texto color4">
+									<li class="color4 mancha-texto-popup text-justify"><strong>Golf:</strong> paquetes de golf exclusivos para residentes de Senderos Mayakoba. 20% de descuento para rondas a partir de 3.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuentos</strong> en casa club y 20% de descuento en Restaurante Koba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en canchas de tenis y paddle.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en tiro con arco, kayak y croquet.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Uso de la casa club</strong> de Mayakoba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Membresía</strong> para casa club, club de golf y club de playa de Mayakoba Country Club.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Acceso</strong> al Pueblito e iglesia, para eventos.</li>
+								</ul>		
+		        			</div>		
+        				</div>
+        				<div class = "row">
+							<hr class = "separator-eco-chic especifications">
+						</div>
+						<div class = "row share-content">
+							<div class = "col-md-4 no-padding">
+								<span class = "facebook-button share-btn" data-service = "facebook" data-url="http://162.243.121.61/mayakoba/senderos-mayakoba/" data-image="" data-title="Senderos de Mayakoba"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "twitter-buttom share-btn-2" data-service = "twitter" data-image = "" data-url = ""><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "mail-share"><a href="mailto:?subject=SENDEROS DE MAYAKOBA&amp;body=Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente" title="Share by Email"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></a></span>
+							</div>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal  sections for amenidades -->
+<div class="modal fade" id="cenotes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class = "row">
+        	<div class = "col-md-6">
+        		<div id="carousel-cenotes" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-cenotes" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-cenotes" data-slide-to="1"></li>
+						    <li data-target="#carousel-cenotes" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-cenotes" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-cenotes" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+        	</div>
+        	<div class= "col-md-6 modal-texto">
+        		<div class = "row">
+        			<div class = "col-md-12">
+        				<div class = "row">
+        					<div class = "col-md-12">
+		        				<h4 class = "title color6 text-center">Membresía Mayakoba</h4>
+				        		<ul class="list-mayakoba-style mancha-texto color4">
+									<li class="color4 mancha-texto-popup text-justify"><strong>Golf:</strong> paquetes de golf exclusivos para residentes de Senderos Mayakoba. 20% de descuento para rondas a partir de 3.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuentos</strong> en casa club y 20% de descuento en Restaurante Koba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en canchas de tenis y paddle.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en tiro con arco, kayak y croquet.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Uso de la casa club</strong> de Mayakoba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Membresía</strong> para casa club, club de golf y club de playa de Mayakoba Country Club.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Acceso</strong> al Pueblito e iglesia, para eventos.</li>
+								</ul>		
+		        			</div>		
+        				</div>
+        				<div class = "row">
+							<hr class = "separator-eco-chic especifications">
+						</div>
+						<div class = "row share-content">
+							<div class = "col-md-4 no-padding">
+								<span class = "facebook-button share-btn" data-service = "facebook" data-url="http://162.243.121.61/mayakoba/senderos-mayakoba/" data-image="" data-title="Senderos de Mayakoba"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "twitter-buttom share-btn-2" data-service = "twitter" data-image = "" data-url = ""><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "mail-share"><a href="mailto:?subject=SENDEROS DE MAYAKOBA&amp;body=Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente" title="Share by Email"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></a></span>
+							</div>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal  sections for amenidades -->
+<div class="modal fade" id="parques" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class = "row">
+        	<div class = "col-md-6">
+        		<div id="carousel-parques" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-parques" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-parques" data-slide-to="1"></li>
+						    <li data-target="#carousel-parques" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-parques" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-parques" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+        	</div>
+        	<div class= "col-md-6 modal-texto">
+        		<div class = "row">
+        			<div class = "col-md-12">
+        				<div class = "row">
+        					<div class = "col-md-12">
+		        				<h4 class = "title color6 text-center">Membresía Mayakoba</h4>
+				        		<ul class="list-mayakoba-style mancha-texto color4">
+									<li class="color4 mancha-texto-popup text-justify"><strong>Golf:</strong> paquetes de golf exclusivos para residentes de Senderos Mayakoba. 20% de descuento para rondas a partir de 3.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuentos</strong> en casa club y 20% de descuento en Restaurante Koba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en canchas de tenis y paddle.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en tiro con arco, kayak y croquet.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Uso de la casa club</strong> de Mayakoba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Membresía</strong> para casa club, club de golf y club de playa de Mayakoba Country Club.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Acceso</strong> al Pueblito e iglesia, para eventos.</li>
+								</ul>		
+		        			</div>		
+        				</div>
+        				<div class = "row">
+							<hr class = "separator-eco-chic especifications">
+						</div>
+						<div class = "row share-content">
+							<div class = "col-md-4 no-padding">
+								<span class = "facebook-button share-btn" data-service = "facebook" data-url="http://162.243.121.61/mayakoba/senderos-mayakoba/" data-image="" data-title="Senderos de Mayakoba"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "twitter-buttom share-btn-2" data-service = "twitter" data-image = "" data-url = ""><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "mail-share"><a href="mailto:?subject=SENDEROS DE MAYAKOBA&amp;body=Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente" title="Share by Email"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></a></span>
+							</div>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal  sections for amenidades -->
+<div class="modal fade" id="casa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class = "row">
+        	<div class = "col-md-6">
+        		<div id="carousel-casa" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-casa" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-casa" data-slide-to="1"></li>
+						    <li data-target="#carousel-casa" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-casa" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-casa" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+        	</div>
+        	<div class= "col-md-6 modal-texto">
+        		<div class = "row">
+        			<div class = "col-md-12">
+        				<div class = "row">
+        					<div class = "col-md-12">
+		        				<h4 class = "title color6 text-center">Membresía Mayakoba</h4>
+				        		<ul class="list-mayakoba-style mancha-texto color4">
+									<li class="color4 mancha-texto-popup text-justify"><strong>Golf:</strong> paquetes de golf exclusivos para residentes de Senderos Mayakoba. 20% de descuento para rondas a partir de 3.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuentos</strong> en casa club y 20% de descuento en Restaurante Koba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en canchas de tenis y paddle.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en tiro con arco, kayak y croquet.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Uso de la casa club</strong> de Mayakoba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Membresía</strong> para casa club, club de golf y club de playa de Mayakoba Country Club.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Acceso</strong> al Pueblito e iglesia, para eventos.</li>
+								</ul>		
+		        			</div>		
+        				</div>
+        				<div class = "row">
+							<hr class = "separator-eco-chic especifications">
+						</div>
+						<div class = "row share-content">
+							<div class = "col-md-4 no-padding">
+								<span class = "facebook-button share-btn" data-service = "facebook" data-url="http://162.243.121.61/mayakoba/senderos-mayakoba/" data-image="" data-title="Senderos de Mayakoba"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "twitter-buttom share-btn-2" data-service = "twitter" data-image = "" data-url = ""><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "mail-share"><a href="mailto:?subject=SENDEROS DE MAYAKOBA&amp;body=Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente" title="Share by Email"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></a></span>
+							</div>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal  sections for amenidades -->
+<div class="modal fade" id="pista" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class = "row">
+        	<div class = "col-md-6">
+        		<div id="carousel-pista" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-pista" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-pista" data-slide-to="1"></li>
+						    <li data-target="#carousel-pista" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-pista" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-pista" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+        	</div>
+        	<div class= "col-md-6 modal-texto">
+        		<div class = "row">
+        			<div class = "col-md-12">
+        				<div class = "row">
+        					<div class = "col-md-12">
+		        				<h4 class = "title color6 text-center">Membresía Mayakoba</h4>
+				        		<ul class="list-mayakoba-style mancha-texto color4">
+									<li class="color4 mancha-texto-popup text-justify"><strong>Golf:</strong> paquetes de golf exclusivos para residentes de Senderos Mayakoba. 20% de descuento para rondas a partir de 3.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuentos</strong> en casa club y 20% de descuento en Restaurante Koba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en canchas de tenis y paddle.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en tiro con arco, kayak y croquet.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Uso de la casa club</strong> de Mayakoba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Membresía</strong> para casa club, club de golf y club de playa de Mayakoba Country Club.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Acceso</strong> al Pueblito e iglesia, para eventos.</li>
+								</ul>		
+		        			</div>		
+        				</div>
+        				<div class = "row">
+							<hr class = "separator-eco-chic especifications">
+						</div>
+						<div class = "row share-content">
+							<div class = "col-md-4 no-padding">
+								<span class = "facebook-button share-btn" data-service = "facebook" data-url="http://162.243.121.61/mayakoba/senderos-mayakoba/" data-image="" data-title="Senderos de Mayakoba"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "twitter-buttom share-btn-2" data-service = "twitter" data-image = "" data-url = ""><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "mail-share"><a href="mailto:?subject=SENDEROS DE MAYAKOBA&amp;body=Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente" title="Share by Email"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></a></span>
+							</div>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal  sections for amenidades -->
+<div class="modal fade" id="senderosslide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class = "row">
+        	<div class = "col-md-6">
+        		<div id="carousel-senderosslide" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#carousel-senderosslide" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-senderosslide" data-slide-to="1"></li>
+						    <li data-target="#carousel-senderosslide" data-slide-to="2"></li>
+						  </ol>
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner" role="listbox">
+						    <div class="item active">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						    <div class="item">
+						      <img src="./web/image/senderos/Amenidades/6-membresia.jpg" alt="...">
+						      <div class="carousel-caption">
+						      </div>
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-senderosslide" role="button" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-senderosslide" role="button" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+        	</div>
+        	<div class= "col-md-6 modal-texto">
+        		<div class = "row">
+        			<div class = "col-md-12">
+        				<div class = "row">
+        					<div class = "col-md-12">
+		        				<h4 class = "title color6 text-center">Membresía Mayakoba</h4>
+				        		<ul class="list-mayakoba-style mancha-texto color4">
+									<li class="color4 mancha-texto-popup text-justify"><strong>Golf:</strong> paquetes de golf exclusivos para residentes de Senderos Mayakoba. 20% de descuento para rondas a partir de 3.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuentos</strong> en casa club y 20% de descuento en Restaurante Koba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en canchas de tenis y paddle.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Descuento</strong> en tiro con arco, kayak y croquet.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Uso de la casa club</strong> de Mayakoba.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Membresía</strong> para casa club, club de golf y club de playa de Mayakoba Country Club.</li>
+									<li class="color4 mancha-texto-popup text-justify"><strong>Acceso</strong> al Pueblito e iglesia, para eventos.</li>
+								</ul>		
+		        			</div>		
+        				</div>
+        				<div class = "row">
+							<hr class = "separator-eco-chic especifications">
+						</div>
+						<div class = "row share-content">
+							<div class = "col-md-4 no-padding">
+								<span class = "facebook-button share-btn" data-service = "facebook" data-url="http://162.243.121.61/mayakoba/senderos-mayakoba/" data-image="" data-title="Senderos de Mayakoba"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "twitter-buttom share-btn-2" data-service = "twitter" data-image = "" data-url = ""><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+							</div>
+							<div class = "col-md-4 no-padding">
+								<span class = "mail-share"><a href="mailto:?subject=SENDEROS DE MAYAKOBA&amp;body=Senderos Mayakoba es una encantadora expresión del estilo de vida Eco-Chic, es un proyecto distinguido y comprometido con el medio ambiente" title="Share by Email"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></a></span>
+							</div>
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+	

@@ -34,3 +34,15 @@
 .contacto-derecha{
 	border-right: 1px solid #fff
 }
+
+.italic{
+	font-style: italic;
+}
+
+.open-sans-important{
+    font-family: 'Open Sans'!important;
+}
+
+.weight-100{
+	font-weight: 100;
+}
