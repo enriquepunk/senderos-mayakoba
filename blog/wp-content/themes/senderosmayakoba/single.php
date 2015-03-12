@@ -36,16 +36,16 @@ get_header(); ?>
 						?>
 					</div>
 				</div>
-				<div class = "row share-content social-media-content">
-					<div class = "col-md-8 col-md-offset-2">
+				<div class = "row share-content social-media-content text-center">
+					<div class = "col-xs-12 col-md-8 col-md-offset-2">
 						<div class = "row">
-							<div class = "col-md-4">
+							<div class = "col-sm-4 col-md-4 text-center">
 								<span class = "facebook-button"><img src="./web/image/General/boton-facebook.jpg" class = "img-responsive" alt="Facebook"></span>
 							</div>
-							<div class = "col-md-4">
-								<span class = "twitter-buttom"><img src="./web/image/General/boton-twitter.jpg" class = "img-responsive" alt="Twitter"></span>
+							<div class = "col-sm-4 col-md-4 text-center">
+								<span class = "twitter-buttom"><img src="./web/image/General/boton-twitter.jpg"  class = "img-responsive" alt="Twitter"></span>
 							</div>
-							<div class = "col-md-4">
+							<div class = "col-sm-4 col-md-4 text-center">
 								<span class = "mail-share"><img src="./web/image/General/boton-correo.jpg" class = "img-responsive" alt="mail"></span>
 							</div>	
 						</div>

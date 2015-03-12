@@ -42,6 +42,7 @@ $(document).ready(function(){
     /* facebook action share */
     $('.share-btn').on( 'click',feed );
     
+    $(".fancy-galeria").fancybox({ });  
 
 
     $(document).on('click', '.share-btn-2', function(event) {

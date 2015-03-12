@@ -562,3 +562,30 @@ function new_excerpt_more( $more ) {
 	return '...<a class="read-more-btn montserrat px16 background5 color1" href="'. get_permalink( get_the_ID() ) . '">LEER MÁS</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+
+
+
+
+
+function theme_register_sidebar(){
+register_sidebar(array(
+'name' => 'Mayakoba Date Selector',
+'id' => 'custom-header-widget',
+'before_widget' => '
+<div class="widget %2$s" id="%1$s">',
+'after_widget' => '</div>',
+'before_title' => '<strong class="widgettitle">',
+'after_title' => '</strong>',
+));
+}
+add_action( 'widgets_init', 'theme_register_sidebar' );
+
+
+
+function new_header_widget(){
+echo '<div class="header-widget">';
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('custom-header-widget') ) ;
+echo '</div>';
+}
+add_action('themify_header_end', 'new_header_widget');

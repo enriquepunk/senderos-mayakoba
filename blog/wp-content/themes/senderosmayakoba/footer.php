@@ -15,7 +15,7 @@
 	    <footer id="footer" class="clearfix container-fluid  footer-background">
         <div class = "container">
           <div class="row">
-            <div class="col-md-10 col-md-offset-1 text-center">
+            <div class="col-md-12 text-center">
               <div class = "row footer-super">
                 <div class = "col-md-8">
                   <ul class = "row footer-list-nav-menu text-left">
@@ -24,7 +24,7 @@
                     </li>
                     <li class = "">
                       <a class = "color1 montserrat px12" href="">Senderos de Mayakobá</a>
-                      <ul class = "submenu-footer-nav">
+                      <ul class = "submenu-footer-nav visible-lg">
                           <li><a class = "color1 montserrat px12" href="#">Ubicación</a></li>
                           <li><a class = "color1 montserrat px12" href="#">Master Plan</a></li>
                           <li><a class = "color1 montserrat px12" href="#">Financiamiento</a></li>
@@ -33,7 +33,7 @@
                     </li>
                     <li class = "">
                       <a class = "color1 montserrat px12" href="">Galería</a>
-                      <ul class = "submenu-footer-nav">
+                      <ul class = "submenu-footer-nav visible-lg">
                           <li><a class = "color1 montserrat px12" href="#">Renders</a></li>
                           <li><a class = "color1 montserrat px12" href="#">Fotografía</a></li>
                           <li><a class = "color1 montserrat px12" href="#">Videos</a></li>
@@ -76,7 +76,7 @@
                                   <button class = "submit-newsletter color1 montserrat px12 background2" type="submit" class="btn btn-default">Enviar</button>
                               </div>
                           </div>
-                      </div>
+                        </div>
                     </form>
                     <div class = "row copy-text">
                         <div class = "col-md-12 color1 montserrat px12 text-right">

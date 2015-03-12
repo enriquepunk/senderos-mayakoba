@@ -46,3 +46,7 @@
 .weight-100{
 	font-weight: 100;
 }
+
+.grid-gallery a{
+	text-decoration: none;
+}

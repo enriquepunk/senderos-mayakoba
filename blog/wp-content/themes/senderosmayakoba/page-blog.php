@@ -75,38 +75,57 @@ get_header();
 		<div class = "row">
 			<section class = "col-md-12">
 				<div class = "row content-post">
-					<?php
-						while ( $the_query->have_posts() ) : $the_query->the_post();
-					?>
-						<div class = "col-md-6">
-							<div class = "row">
-								<div class = "col-md-12">
-									<div class = "row background7">
-										<div class = "col-xs-5 no-padding">
-											<?php 
-												if ( has_post_thumbnail() ) { 
-													$image_id = get_post_thumbnail_id();
-													$image_url = wp_get_attachment_image_src($image_id,'large', true);
-													echo '<img class = "img-responsive" src="'. $image_url[0] .'" alt="">';
-												} 
-											?>
-										</div>
-										<div class = "col-xs-7 background7">
-											<div class = "last-post">
-												<h3 class = "title open-sans italic color3"><?php the_title(); ?></h3>
-												<p class = "text-blog">
-													 <?php the_excerpt(); ?> 
-												</p>
-												<!--<a href = "<?php echo get_permalink(); ?>" class = "read-more-btn montserrat px16 background5 color1">
-													LEER MÁS
-												</a>-->	
-											</div>
-											
-										</div>	
+						<?php
+							while ( $the_query->have_posts() ) : $the_query->the_post();
+						?>
+						<div class ="col-sm-6 padding-medium">
+							<div class ="row background7">
+								<div class ="col-xs-5 col-sm-5 col-md-5 img-single-post-custom">
+									<?php 
+										if ( has_post_thumbnail() ) { 
+											$image_id = get_post_thumbnail_id();
+											$image_url = wp_get_attachment_image_src($image_id,'large', true);
+											echo '<img class = "img-responsive" src="'. $image_url[0] .'" alt="">';
+										} 
+									?>
+								</div>
+								<div class = "col-xs-7 col-sm-7 col-md-7">
+									<div class = "last-post">
+										<h3 class = "title open-sans italic color3"><?php the_title(); ?></h3>
+										<p class = "text-blog">
+											<?php the_excerpt(); ?>
+										</p>	
 									</div>
 								</div>
 							</div>
 						</div>
+					<!--<div class = "col-md-6  padding-medium">
+						<div class = "row">
+							<div class = "col-sm-5 col-xs-5" style="padding-left:0">
+								<?php 
+									if ( has_post_thumbnail() ) { 
+										$image_id = get_post_thumbnail_id();
+										$image_url = wp_get_attachment_image_src($image_id,'large', true);
+										echo '<img class = "img-responsive" src="'. $image_url[0] .'" alt="">';
+									} 
+								?>
+							</div>
+							<div class = "col-sm-7 col-xs-7 background7">
+								<div class = "last-post">
+									<h3 class = "title open-sans italic color3"><?php the_title(); ?></h3>
+									<p class = "text-blog">
+										<?php the_excerpt(); ?>
+									</p>
+									<a href = "{{post.guid}}" class = "read-more-btn montserrat px16 background1 color1">
+										LEER MÁS
+									</a>	
+								</div>
+							</div>	
+						</div>
+					</div>-->
+
+
+
 					<?php
 						// if multiple of 3 close div and open a new div
 						if(( ( $i ) % 2 == 0) &&  $i != $the_query->post_count ) {
