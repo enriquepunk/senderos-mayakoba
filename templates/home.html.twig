@@ -113,49 +113,34 @@
 			</div>
 		</div>	
 		<div class = "row content-post">
-			<div class = "col-md-5 col-md-offset-1 padding-medium ">
-					
-						<div class = "row background7">
-							<div class = "col-sm-5 col-xs-5  " style="padding-left:0">
-								<img class = "img-responsive" src="http://placehold.it/230x300&text=Post" alt="">
-							</div>
-							<div class = "col-sm-7 col-xs-7 background7">
-								<div class = "last-post">
-									<h3 class = "title open-sans italic color3">Echo-Chic home office</h3>
-									<p class = "text-blog">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vero, delectus vel, accusantium, impedit cumque...
-									</p>
-									<a href = "#" class = "read-more-btn montserrat px16 background1 color1">
-										LEER MÁS
-									</a>	
+		{% for post in posts %}
+			
+				<div class = "col-md-5 {{ cycle(['col-md-offset-1', ''], loop.index0) }} padding-medium ">
+						
+							<div class = "row background7">
+								<div class = "col-sm-5 col-xs-5  " style="padding-left:0">
+									<img class = "img-responsive" src="http://162.243.121.61/mayakoba/senderos-mayakoba/blog/wp-content/uploads/{{post.meta_value}}" alt="">
 								</div>
-								
-							</div>	
-						</div>
+								<div class = "col-sm-7 col-xs-7 background7">
+									<div class = "last-post">
+										<h3 class = "title open-sans italic color3">{{post.post_title}}</h3>
+										<p class = "text-blog">
+											{{post.post_content|truncate(100)}}
+										</p>
+										<a href = "{{post.guid}}" class = "read-more-btn montserrat px16 background1 color1">
+											LEER MÁS
+										</a>	
+									</div>
+									
+								</div>	
+							</div>
+					
+				</div>
 				
-			</div>
-			<div class = "col-md-5 padding-medium">		
-					
-						<div class = "row background7">
-							<div class = "col-sm-5 col-xs-5  " style="padding-left:0">
-								<img class = "img-responsive" src="http://placehold.it/230x300&text=Post" alt="">
-							</div>
-							<div class = "col-sm-7 col-xs-7 background7">
-								<div class = "last-post">
-									<h3 class = "title open-sans italic color3">Echo-Chic home office</h3>
-									<p class = "text-blog">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate vero, delectus vel, accusantium, impedit cumque...
-									</p>
-									<a href = "#" class = "read-more-btn montserrat px16 background5 color1">
-										LEER MÁS
-									</a>	
-								</div>
-								
-							</div>	
-						</div>
-					
-			</div>
+			
+		{% endfor %}
 		</div>
+		
 	</section>
 </div>
 {% endblock %}

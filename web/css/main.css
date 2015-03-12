@@ -82,7 +82,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 
@@ -92,7 +92,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #promociones{
@@ -100,7 +100,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #quienes-somos{
@@ -108,7 +108,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #master-plan{
@@ -116,7 +116,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #ubicacion{
@@ -124,7 +124,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #contacto{
@@ -132,7 +132,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #blog{
@@ -140,7 +140,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #galeria-render{
@@ -148,7 +148,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #galeria-fotos{
@@ -156,7 +156,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 
@@ -166,7 +166,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 .home #financiamiento{
@@ -174,7 +174,7 @@
     background-repeat: no-repeat;
     background-size:100%;
     width: 100%;
-    min-height: 585px;
+    /*min-height: 585px;*/
 }
 
 
@@ -1301,23 +1301,23 @@ ul.dropdown-menu {
 
       @media (max-width: 767px) {
         .footer-background{background-size: cover;} 
-          .home #header{  min-height: 200px;}
+          body>header.container{  min-height: 200px;}
           #navbar{background-color:rgba(0,0,0,0.9);}
           #navbar .nav.navbar-nav{border-top: none;}
       }
 
       @media (min-width: 768px) and (max-width: 991px) {
-        .home #header{  min-height: 450px;}
+        body>header.container{  min-height: 450px;}
       }
 
 
       @media (min-width: 992px) and (max-width: 1199px) {
-        .home #header{  min-height: 500px;}
+        body>header.container{  min-height: 500px;}
       }
         
 
       @media (min-width: 1200px) {
-          
+          body>header.container{  min-height: 585px;}
       }
 
 /* Menú navbar */
